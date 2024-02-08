@@ -27,22 +27,24 @@ answer1 = input()
 if answer1 == "take":
     print(f"Your card number: {result1}")
 else:
-    print("game over")
-    exit()
+    result1 = 0
+    
 
 print("Player2 take card (take/no)")
 answer2 = input()
 if answer2 == "take":
     print(f"Your card number:{result2}")
 else:
+    result2 = 0
     print("game over")
-    exit()
-
+    
+    
 if result1 > result2:
     print("Player1 won, congratulations!")
+elif result1 == result2:
+    print("it is a draw")
 else:
     print("Player2 won, congratulations!")
-
 
 
 
